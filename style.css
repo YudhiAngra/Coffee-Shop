@@ -1,0 +1,180 @@
+body {
+    background-image: url("https://sumatocoffee.com/cdn/shop/articles/the-importance-of-coffee-shops-in-communities-782577_900x.jpg?v=1713277728");
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    margin: 30px auto;
+    width: 75%;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+table {
+    width: 100%;
+    background-color: rgba(45, 45, 45, 0.3);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(64, 53, 53, 0.8);
+}
+
+td {
+    background-color: rgba(91, 82, 82, 0.7);
+}
+
+td:hover {
+    background-color: rgba(117, 77, 77, 0.8);
+}
+
+img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    background-color: rgb(64, 44, 44);
+    border: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: rgb(90, 60, 60);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#total {
+    height: 35px;
+    width: 135px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+}
+
+/* --- Modal Popup Styling --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #1f1f1f;
+    color: white;
+    margin: 10% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 450px;
+    border-radius: 12px;
+    text-align: center;
+    animation: slideDown 0.4s ease;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -15px;
+    margin-right: -10px;
+}
+
+.close:hover {
+    color: white;
+}
+
+#orderDetails p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

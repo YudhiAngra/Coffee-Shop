@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To The Coffee Shop!</h1>
+        <table border="0">
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Espresso</td>
+                    <td><img src="https://www.seriouseats.com/thmb/MS_5p-UVwIHCrr5MaXonYJajP7o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__06__20180613-coffee-vs-espresso-vicky-wasik-3-1500x1125-418fa2a14e7249b18040c2c34bf8569c.jpg" alt="" width="175px" height="150px"></td>
+                    <td>165</td>
+                    <td><input type="number" id="espressoQty" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td><img src="https://dairyfarmersofcanada.ca/sites/default/files/styles/recipe_image/public/image_file_browser/conso_recipe/2022/Capuccino.jpg.jpeg?itok=J1pWPwe2" alt="" width="175px" height="150px"></td>
+                    <td>183</td>
+                    <td><input type="number" id="cappuccinoQty" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Caffe Latte</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Caffe_Latte.jpg/1077px-Caffe_Latte.jpg" alt="" width="175px" height="150px"></td>
+                    <td>137</td>
+                    <td><input type="number" id="latteQty" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Caffe Mocha</td>
+                    <td><img src="https://athome.starbucks.com/sites/default/files/2021-06/1_CAH_CaffeMocha_Hdr_2880x16602.jpg" alt="" width="175px" height="150px"></td>
+                    <td>171</td>
+                    <td><input type="number" id="mochaQty" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Frappe</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA70l-9oJsX9xnmJWeHgA4yeeU1Xu-E_DZww&s" alt="" width="175px" height="150px"></td>
+                    <td>217</td>
+                    <td><input type="number" id="frappeQty" value="0" min="0"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="buttons">
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <button onclick="clearBill()">Clear</button>
+            <button onclick="placeOrder()">Order</button>
+        </div>
+
+        <h2>Total: <input type="number" id="total" value="0" readonly></h2>
+    </div>
+
+    <!-- Order Summary Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>🧾 Your Order</h2>
+            <div id="orderDetails"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
