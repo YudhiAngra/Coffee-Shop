@@ -40,7 +40,7 @@ You can easily deploy this project using **GitHub Pages**:
    `https://yourusername.github.io/Coffee-Shop-Billing-System/`
 
 Example link:  
-[https://yudhiangra.github.io/Coffee-Shop-Billing-System/](https://yudhiangra.github.io/Coffee-Shop-Billing-System/)
+[https://yudhiangra.github.io/Coffee-Shop-Billing-System/](https://yudhiangra.github.io/Coffee-Shop/)
 
 ## 👨‍💻 Developer
 Developed by **Yudhi Angra**, a passionate front-end developer working on building intuitive user interfaces with an emphasis on clean design and functionality.
